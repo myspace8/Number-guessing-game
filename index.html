@@ -4,40 +4,49 @@
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div id="phone">
-      <div id="phoneSensor">
-        <span id="dot"></span>
-        <span id="lineShort"></span>
+      <!-- More later -->
+      <div id="phone-sensor">
+        <span id=""></span>
+        <div>
+          <span id="dot"></span>
+          <span id="short-line"></span>
+        </div>
       </div>
-      <!-- <h1>Number guessing game</h1> -->
-  
-      <p id="gameDescription">We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
-  
+      <p id="game-description">
+        We have selected a random number between 1 and 100. See if you can guess
+        it in 10 turns or fewer. We'll tell you if your guess was too high or
+        too low.
+      </p>
+
       <div id="form">
         <div id="label">
-          <label for="guessField">Enter a guess</label>
-          <svg xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 96 960 960" width="28"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg>
+          <label for="guess-field">Enter a guess</label>
+          <span>&darr;</span>
         </div>
-        <input type="number" min="1" max="100" required id="guessField" class="guessField">
-        <input type="submit" value="Submit guess" class="guessSubmit">
+        <input
+          type="number"
+          min="1"
+          max="2"
+          required
+          id="guess-field"
+          id="guess-field"
+        />
+        <input type="submit" value="Submit guess" id="guess-submit" />
       </div>
-  
-      <div class="resultParas">
-        <p class="guesses">Guesses</p>
-        <p class="lastResult">Last result</p>
-        <p class="lowOrHi">Hint</p>
+
+      <div id="result-paras">
+        <p class="guesses"></p>
+        <p class="last-result"></p>
+        <p class="lowOrhigh"></p>
       </div>
-      <div id="phoneSensor">
-        <span id="lineShort" class="homeButton"></span>
+      <button id="reset-game">Reset game</button>
+      <div id="phone-sensor">
+        <span id="short-line"></span>
       </div>
-      <button id="resetGame">Reset game</button>
     </div>
     <script type="module" src="script.js"></script>
   </body>

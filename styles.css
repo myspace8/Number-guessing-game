@@ -1,24 +1,130 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
-}
+} */
 
 html {
   font-family: sans-serif;
 }
 
 body {
-  width: 50%;
+  /* width: 50%;
   max-width: 800px;
   min-width: 480px;
-  margin: 0 auto;
-  height: 100vh;
+  margin: 0 auto; */
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#phone {
+  display: grid;
+  grid-template-rows: 18px auto auto auto auto 18px;
+  gap: 18px;
+  border: 2px solid grey;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+#phone-sensor {
+  /* background-color: violet; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#gameDescription {
+#phone-sensor div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+#dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: grey;
+  right: 16px;
+}
+
+#short-line {
+  width: 42px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: grey;
+}
+
+#game-description {
+  text-align: center;
+  max-width: 250px;
+  margin: 0;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+#form #label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form #guess-submit {
+  background-color: green;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  margin-top: 8px;
+}
+
+#result-paras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 200px;
+  max-width: 200px;
+  margin: auto;
+  border: 2px dotted gray;
+}
+
+#result-paras p {
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#game-description {
+  /* background-color: gold; */
+}
+
+#form {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* background-color: firebrick; */
+}
+
+.result-paras {
+  /* background-color: saddlebrown; */
+}
+
+/* #game-description {
   margin: 18px 0;
 }
 
@@ -41,22 +147,14 @@ body {
   align-items: center;
 }
 
-.lastResult {
+.last-result {
   color: white;
   padding: 3px;
 }
 
-/* Phone Shape */
-#phone {
-  position: relative;
-  border: 2px solid grey;
-  text-align: center;
-  padding: 1rem;
-  border-radius: 6px;
-  width: 250px;
-}
 
-#phoneSensor {
+
+#phone-sensor {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -76,20 +174,20 @@ body {
   right: 16px;
 }
 
-#lineShort {
+#short-line {
   display: block;
   width: 42px;
   height: 4px;
   background-color: grey;
 }
 
-#phoneSensor .homeButton {
+#phone-sensor .home-button {
   position: absolute;
   height: 42px;
   border-radius: 50%;
   bottom: -12px;
 }
 
-#resetGame {
+#reset-game {
   display: none;
-}
+} */
