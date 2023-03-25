@@ -20,7 +20,7 @@ body {
 
 #phone {
   display: grid;
-  grid-template-rows: 18px auto auto auto auto 18px;
+  grid-template-rows: 18px 1fr 48px;
   gap: 18px;
   border: 2px solid grey;
   padding: 1rem;
@@ -55,6 +55,14 @@ body {
   height: 3px;
   border-radius: 4px;
   background-color: grey;
+}
+
+#screen-wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 18px;
+  border: 2px solid grey;
+  padding: 1rem;
 }
 
 #game-description {
@@ -92,6 +100,7 @@ body {
   width: 200px;
   max-width: 200px;
   margin: auto;
+  padding: 8px;
   border: 2px dotted gray;
 }
 
@@ -99,95 +108,24 @@ body {
   margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-#game-description {
-  /* background-color: gold; */
-}
-
-#form {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* background-color: firebrick; */
-}
-
-.result-paras {
-  /* background-color: saddlebrown; */
-}
-
-/* #game-description {
-  margin: 18px 0;
-}
-
-#form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 28px;
-}
-
-#form input[type='number'] {
-  width: 200px;
-}
-
-#label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.last-result {
+#reset-game {
+  background-color: green;
   color: white;
-  padding: 3px;
+  padding: 6px 12px;
+  border: none;
+  margin-top: 8px;
+  visibility: hidden;
 }
 
-
-
-#phone-sensor {
-  position: absolute;
+#home-button-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
 }
 
-#dot {
-  display: block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
+#home-button {
   background-color: grey;
-  position: relative;
-  right: 16px;
-}
-
-#short-line {
-  display: block;
   width: 42px;
-  height: 4px;
-  background-color: grey;
-}
-
-#phone-sensor .home-button {
-  position: absolute;
   height: 42px;
   border-radius: 50%;
-  bottom: -12px;
 }
-
-#reset-game {
-  display: none;
-} */

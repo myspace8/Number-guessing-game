@@ -16,36 +16,38 @@
           <span id="short-line"></span>
         </div>
       </div>
-      <p id="game-description">
-        We have selected a random number between 1 and 100. See if you can guess
-        it in 10 turns or fewer. We'll tell you if your guess was too high or
-        too low.
-      </p>
-
-      <div id="form">
-        <div id="label">
-          <label for="guess-field">Enter a guess</label>
-          <span>&darr;</span>
+      <div id="screen-wrapper">
+        <p id="game-description">
+          We have selected a random number between 1 and 100. See if you can guess
+          it in 10 turns or fewer. We'll tell you if your guess was too high or
+          too low.
+        </p>
+  
+        <div id="form">
+          <div id="label">
+            <label for="guess-field">Enter a guess</label>
+            <span>&darr;</span>
+          </div>
+          <input
+            type="number"
+            min="1"
+            max="2"
+            required
+            id="guess-field"
+            id="guess-field"
+          />
+          <input type="submit" value="Submit guess" id="guess-submit" />
         </div>
-        <input
-          type="number"
-          min="1"
-          max="2"
-          required
-          id="guess-field"
-          id="guess-field"
-        />
-        <input type="submit" value="Submit guess" id="guess-submit" />
+  
+        <div id="result-paras">
+          <p class="guesses"></p>
+          <p class="last-result"></p>
+          <p class="lowOrhigh"></p>
+        </div>
+        <button id="reset-game">Reset game</button>
       </div>
-
-      <div id="result-paras">
-        <p class="guesses"></p>
-        <p class="last-result"></p>
-        <p class="lowOrhigh"></p>
-      </div>
-      <button id="reset-game">Reset game</button>
-      <div id="phone-sensor">
-        <span id="short-line"></span>
+      <div id="home-button-wrapper">
+        <span id="home-button"></span>
       </div>
     </div>
     <script type="module" src="script.js"></script>

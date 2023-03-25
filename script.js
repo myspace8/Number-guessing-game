@@ -45,14 +45,14 @@ guessSubmit.addEventListener('click', checkGuess);
 function setGameOver() {
   guessField.disabled = true;
   guessSubmit.disabled = true;
-  resetGameButton.style.display = 'block';
+  resetGameButton.style.visibility = 'visible';
   resetGameButton.addEventListener('click', resetGame);
 }
 
 function resetGame() {
   console.log('ddd');
   guessCount = 1;
-  const resetParas = document.querySelectorAll('.resultParas p');
+  const resetParas = document.querySelectorAll('#result-paras p');
   for (const resetPara of resetParas) {
     resetPara.textContent = '';
   }
@@ -63,6 +63,5 @@ function resetGame() {
   guessField.focus();
   lastResult.style.backgroundColor = 'white';
   randomNumber = Math.floor(Math.random() * 100) + 1;
-  resetGameButton.style.display = 'none'
-  guesses.textContent = ''
+  resetGameButton.style.visibility = 'hidden'
 }
