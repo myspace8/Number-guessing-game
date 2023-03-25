@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: 50%;
+  max-width: 800px;
+  min-width: 480px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gameDescription {
+  margin: 18px 0;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+#form input[type='number'] {
+  width: 200px;
+}
+
+#label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lastResult {
+  color: white;
+  padding: 3px;
+}
+
+/* Phone Shape */
+#phone {
+  position: relative;
+  border: 2px solid grey;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 6px;
+  width: 250px;
+}
+
+#phoneSensor {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: grey;
+  position: relative;
+  right: 16px;
+}
+
+#lineShort {
+  display: block;
+  width: 42px;
+  height: 4px;
+  background-color: grey;
+}
+
+#phoneSensor .homeButton {
+  position: absolute;
+  height: 42px;
+  border-radius: 50%;
+  bottom: -12px;
+}
+
+#resetGame {
+  display: none;
+}
