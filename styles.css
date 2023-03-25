@@ -8,10 +8,6 @@ html {
 }
 
 body {
-  /* width: 50%;
-  max-width: 800px;
-  min-width: 480px;
-  margin: 0 auto; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,37 +16,36 @@ body {
 
 #phone {
   display: grid;
-  grid-template-rows: 18px 1fr 48px;
-  gap: 18px;
+  grid-template-rows: 18px 1fr auto;
+  gap: 12px;
   border: 2px solid grey;
-  padding: 1rem;
-  border-radius: 6px;
+  padding: 12px;
+  border-radius: 18px;
 }
 
-#phone-sensor {
-  /* background-color: violet; */
+#phone-features {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#phone-sensor div {
+#phone-features div {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
 }
 
-#dot {
-  width: 6px;
-  height: 6px;
+#front-camera {
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background-color: grey;
   right: 16px;
 }
 
-#short-line {
+#phone-speaker {
   width: 42px;
   height: 3px;
   border-radius: 4px;
@@ -61,8 +56,8 @@ body {
   display: grid;
   grid-template-rows: repeat(3, auto);
   gap: 18px;
-  border: 2px solid grey;
-  padding: 1rem;
+  border: 1px solid grey;
+  padding: 12px;
 }
 
 #game-description {
@@ -84,12 +79,13 @@ body {
   align-items: center;
 }
 
-#form #guess-submit {
+#guess-submit {
   background-color: green;
   color: white;
   padding: 6px 12px;
   border: none;
   margin-top: 8px;
+  cursor: pointer;
 }
 
 #result-paras {
@@ -97,11 +93,12 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 6px;
+  font-size: 90%;
   width: 200px;
   max-width: 200px;
   margin: auto;
   padding: 8px;
-  border: 2px dotted gray;
+  border: 2px dotted rgba(128, 128, 128, 0.38);
 }
 
 #result-paras p {
@@ -115,6 +112,7 @@ body {
   border: none;
   margin-top: 8px;
   visibility: hidden;
+  cursor: pointer;
 }
 
 #home-button-wrapper {
